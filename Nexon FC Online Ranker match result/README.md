@@ -21,55 +21,43 @@
 - Joblib 통한 data, model, 라벨 인코더 저장
 
 #### main.py
-- FastAPI를 사용하여 FC 온라인 게임 승부 예측 API 구현
+- FastAPI로 FC 온라인 게임 승부 예측 API 구현
 - 사용자가 경기 데이터를 POST 요청으로 전송
-- 상위 또는 하위 랭커 모델을 통해 승, 무, 패 예측
+- 상위/하위 랭커 모델을 통해 승, 무, 패 예측
 - 예측 결과를 라벨 인코더로 디코딩하여 반환
-- CORS 설정으로 다양한 출처의 요청 허용하고, Uvicorn 서버로 실행
+- CORS 설정으로 다양한 출처의 요청 허용, Uvicorn 서버로 실행
 
-#### WEB 배포
-##### test.html
+#### WEB 배포 - test.html
 - 사용자가 FC 온라인 승부 예측 위한 데이터를 입력할 수 있는 웹 폼 제공
-- FastAPI를 활용해 입력된 데이터를 서버로 전송하고, 서버로부터 예측 결과를 받아 화면에 표시
-- HTML, CSS, JavaScript로 구성된 인터페이스
+- 사용자 인터페이스 제공
+- FastAPI 서버와 상호작용
 
-#### API 요청
-##### api_request.py
-- 사용자로부터 FC 온라인 경기 데이터를 입력받아 FastAPI 서버에 POST 요청을 전송
-- 서버의 응답을 받아 예측 결과 출력
-- 잘못된 입력이나 요청 실패 시 오류 메시지 출력
+#### API 요청 - api_request.py
+- 서버와의 API 요청 처리
 
-#### 외부 앱 배포
-- Ngrok를 활용해 배포
+### 상위 랭커 경기 결과 시각화
+![상위 랭커 경기 결과 비율](https://github.com/user-attachments/assets/078fde20-93ef-4f96-a9ad-957c2683b95b)
 
-### Ollama 모델 등록
-![ollama 모델 등록](https://github.com/user-attachments/assets/9a36450e-05e9-4243-8527-5efbdfc298eb)
+### 하위 랭커 경기 결과 시각화
+![하위 랭커 경기 결과 비율](https://github.com/user-attachments/assets/6c355b42-e85c-4bad-8026-c1799a642485)
 
-### 서버 실행 코드
-![서버 코드](https://github.com/user-attachments/assets/72d77932-712b-4b11-8ce9-e6b7d1fc33fa)
+### 가상환경 실행
+![가상환경 실행](https://github.com/user-attachments/assets/7561e7ee-bacc-46c8-9ecc-80708ae979f2)
 
+### FC온라인 승부 예측 웹 실행 (승리)
+https://github.com/user-attachments/assets/360948ae-93c3-4896-a41d-a5655e10025f
 
-### RAG 기반 반려동물 챗봇 구현
-![챗 체인](https://github.com/user-attachments/assets/17d52ef1-d9c1-4726-89df-e6c574def4a1)
-
-### 모델 선정
-- 모델 크기와 사용자 Local 환경 고려해 llama3-ko와 EEVE 모델 중 한국어 답변 우수했던 야놀자 EEVE LLM 모델 선정
-- 한국어 임베딩 모델 성능 테스트 자료 참고해 BGE-M3 임베딩 모델 선정
-
-### 챗봇 URL(채팅챗)
-[**펫 케어 봇**](https://brave-martin-endlessly.ngrok-free.app/chat/playground/)
-
-# 참고 자료
-1. [**EEVE LLM 논문 리뷰**](https://fornewchallenge.tistory.com/entry/AI-%EB%85%BC%EB%AC%B8-%EC%98%AC%ED%95%B4%EC%9D%98-%ED%95%9C%EA%B5%AD%EC%96%B4-LLM%EC%97%90-%EC%84%A0%EC%A0%95%EB%90%9C-%EC%95%BC%EB%86%80%EC%9E%90-%EC%96%B8%EC%96%B4-%EB%AA%A8%EB%8D%B8-EEVE)
-2. [**BGE-M3 임베딩 모델 논문 리뷰**](https://introduce-ai.tistory.com/entry/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-BGE-M3-Embedding-Multi-Lingual-Multi-Functionality-Multi-Granularity-Text-Embeddings-Through-Self-Knowledge-Distillation)
-2. [**한국어 임베딩 모델 성능 비교 테스트 결과**](https://steemit.com/kr-dev/@anpigon/20240604t162445271z)
-
-
-### 사용 모델
-> 1. [**야놀자 EEVE모델**](https://huggingface.co/heegyu/EEVE-Korean-Instruct-10.8B-v1.0-GGUF)
-> 2. [**BAAI/bge-m3 임베딩 모델**](https://huggingface.co/BAAI/bge-m3)
+### FC온라인 승부 예측 웹 실행 (패배)
+https://github.com/user-attachments/assets/10aa4302-005e-4e27-838e-b709a2756d33
 
 ### 버전
-1. `LangChain version: 0.2.12`
+1. `fastapi version: 0.115.3`
 2. `Python version: 3.12.4`
-3. `LangServe version: 0.2.2`
+3. 'pandas version: 2.2.3'
+4. 'numpy version: 2.1.2'
+5. `joblib version: 1.4.2`
+6. 'requests version: 2.32.3'
+7. 'starlette version: 0.41.0'
+8. 'uvicorn version: 0.32.0'
+
+requests           
