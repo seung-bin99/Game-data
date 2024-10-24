@@ -53,11 +53,9 @@ https://github.com/user-attachments/assets/10aa4302-005e-4e27-838e-b709a2756d33
 ### 버전
 1. `fastapi version: 0.115.3`
 2. `Python version: 3.12.4`
-3. 'pandas version: 2.2.3'
-4. 'numpy version: 2.1.2'
+3. `pandas version: 2.2.3`
+4. `numpy version: 2.1.2`
 5. `joblib version: 1.4.2`
-6. 'requests version: 2.32.3'
-7. 'starlette version: 0.41.0'
-8. 'uvicorn version: 0.32.0'
-
-requests           
+6. `requests version: 2.32.3`
+7. `starlette version: 0.41.0`
+8. `uvicorn version: 0.32.0`
