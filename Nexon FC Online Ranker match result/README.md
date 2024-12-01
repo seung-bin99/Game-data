@@ -2,6 +2,10 @@
 ## 유저 경기 기록을 입력하면 경기 결과를 예상해서 알려주는 웹
 ### FC Online API를 사용해 랭커 총 19명 경기 데이터 수집
 
+### 요약 아키텍처
+![image](https://github.com/user-attachments/assets/5188d4cb-f346-4b30-9ddb-5cdb36251101)
+
+
 ### Process
 #### 데이터 수집
 - NEXON API 센터에서 FC Online 사용자 매치정보를 통해 상위랭커 10명, 하위 랭커 9명 데이터 수집
