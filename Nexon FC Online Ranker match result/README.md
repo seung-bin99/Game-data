@@ -3,8 +3,7 @@
 ### FC Online API를 사용해 랭커 총 19명 경기 데이터 수집
 
 ### 요약 아키텍처
-![image](https://github.com/user-attachments/assets/5188d4cb-f346-4b30-9ddb-5cdb36251101)
-
+![image](https://github.com/user-attachments/assets/660ef0e1-61d8-47e1-8c28-a6e89daeda31)
 
 ### Process
 #### 데이터 수집
